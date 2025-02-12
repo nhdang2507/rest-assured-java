@@ -5,6 +5,7 @@
             <class name="com.restassured.test.bookingtest.GetBookingInfoTest" />
             <class name="com.restassured.test.bookingtest.CreateBookingTest" />
             <class name="com.restassured.test.bookingtest.UpdateBookingTest" />
+            <class name="com.restassured.test.bookingtest.DeleteBookingTest" />
         </classes>
     </test>
 </suite>

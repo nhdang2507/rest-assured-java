@@ -32,7 +32,7 @@ public class UpdateBookingTest extends BaseTest {
     @BeforeClass
     public void setUpdateBookingRequest() {
         //Set end point
-        updateBookingEndPoint = BOOKING_SERVICE_ENDPOINT + "/3795";
+        updateBookingEndPoint = BOOKING_SERVICE_ENDPOINT + "/1469";
         //Set header
         updateBookingRequestHeader.put("Content-Type", CONTENT_TYPE);
         updateBookingRequestHeader.put("Accept", CONTENT_TYPE);

@@ -21,7 +21,6 @@
     <log4j.api.version>2.24.0</log4j.api.version>
     <log4j.core.version>2.24.0</log4j.core.version>
     <smoke.suite.testng.xml>src/test/resources/smoke-suite.xml</smoke.suite.testng.xml>
-    <regression.suite.testng.xml>src/test/resources/regression-suite.xml</regression.suite.testng.xml>
   </properties>
 
   <profiles>
