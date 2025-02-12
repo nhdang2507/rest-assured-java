@@ -8,7 +8,6 @@ import com.restassured.model.BookingDates;
 import com.restassured.model.BookingRequest;
 import com.restassured.test.BaseTest;
 import com.restassured.util.RestClient;
-import io.restassured.response.ValidatableResponse;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -16,7 +15,6 @@ import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
-import static com.restassured.HttpMethod.GET;
 import static com.restassured.HttpMethod.POST;
 import static com.restassured.constant.ApplicationConstant.*;
 import static com.restassured.test.constant.TestCategory.BOOKING;
