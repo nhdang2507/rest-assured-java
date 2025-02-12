@@ -2,7 +2,7 @@
 <suite name="API Automation Demo Smoke Test Suite">
     <test name="Smoke Test">
         <classes>
-            <class name="com.restassured.test.AuthTest" />
+            <class name="com.restassured.test.bookingtest.CreateBookingTest" />
         </classes>
     </test>
 </suite>

@@ -24,8 +24,9 @@ public class RestClient {
     private final String fullRequestUrl;
     private final ExtentReportService extentReportService;
 
-    public RestClient(String baseUri, String basePath, String requestBody) {
+    public RestClient(String baseUri, String basePath, String contentType, String requestBody) {
         requestSpecification = getRequestSpecBuilder(baseUri, basePath)
+                .setAccept(contentType)
                 .setBody(requestBody)
                 .build();
 

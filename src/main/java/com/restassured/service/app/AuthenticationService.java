@@ -27,7 +27,7 @@ public class AuthenticationService {
             throw new RuntimeException(e);
         }
 
-        String token = new RestClient(RESTFUL_BOOKER_BASE_URL, AUTH_SERVICE_ENDPOINT, authRequestJson)
+        String token = new RestClient(RESTFUL_BOOKER_BASE_URL, AUTH_SERVICE_ENDPOINT, CONTENT_TYPE, authRequestJson)
                 .sendRequest(POST)
                 .extract()
                 .body()

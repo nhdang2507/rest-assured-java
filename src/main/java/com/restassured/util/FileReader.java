@@ -9,7 +9,6 @@ import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Objects;
 import java.util.Properties;
 
 import static com.restassured.constant.ReporterConstant.TEST_REPORTER_PROPERTY_FILE_DIRECTORY;
@@ -18,12 +17,8 @@ public class FileReader {
     private static final Logger logger = LogManager.getLogger();
 
     public static String getEnvironmentConfig(String propertyName) {
-        String fileName = "env/" + CommonConstant.EXECUTION_ENV_NAME + ".properties";
-        Path filePath = Paths.get(
-                Objects.requireNonNull(
-                        FileReader.class.getClassLoader().getResource(fileName)
-                ).getPath()
-        );
+        String fileName = "./src/test/resources/env/" + CommonConstant.EXECUTION_ENV_NAME + ".properties";
+        Path filePath = Paths.get(fileName);
         return getPropertyFromFile(filePath, propertyName);
     }
 
@@ -35,7 +30,6 @@ public class FileReader {
         Properties properties = loadProperties(filePath);
         return properties.getProperty(propertyName);
     }
-
     private static Properties loadProperties(Path filePath) {
         Properties properties = new Properties();
         try (InputStream inputStream = Files.newInputStream(filePath)) {

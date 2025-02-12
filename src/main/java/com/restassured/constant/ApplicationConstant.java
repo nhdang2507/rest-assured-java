@@ -13,4 +13,5 @@ public class ApplicationConstant {
     // Headers
     public static final String AUTH_HEADER_NAME = "Cookie";
     public static final String AUTH_TOKEN_PREFIX = "token=";
+    public static final String CONTENT_TYPE = "application/json";
 }
